@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Polygon</title>
+  <style>
+    body { margin: 0; font: 20px homevideo, monospace; }
+    canvas { display: block; }
+
+    @font-face {
+      font-family: 'homevideo'; /* Name of your custom font */
+      src: url('assets/HomeVideo-Regular.otf') format('opentype');
+      font-weight: normal; /* Define font weight */
+      font-style: normal; /* Define font style */
+    }
+
+    @font-face {
+      font-family: 'detroitmono'; /* Name of your custom font */
+      src: url('assets/DetroitMono-Regular.ttf') format('truetype');
+      font-weight: normal; /* Define font weight */
+      font-style: normal; /* Define font style */
+    }
+
+
+    #text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Center the div */
+      width: 500px; /* Same width as the Matter.js rectangle */
+      height: 300px; /* Same height as the Matter.js rectangle */
+      color: white; /* Text color */
+      text-align: center; /* Center align text */
+      background: rgba(0, 0, 0, 0); /* Semi-transparent background */
+      padding: 0px; /* Padding for aesthetics */
+      border-radius: 0px; /* Optional: rounded corners */
+      font-family: homevideo; /* Font style */
+      display: flex; /* Enable flexbox for vertical centering */
+      flex-direction: column; /* Arrange children in a column */
+      justify-content: center; /* Center vertically */
+    }
+    h1, h2, p {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: none;
+    }
+
+    a {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: normal;
+    }
+
+
+    
+  </style>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js"></script>
+  <script src="https://pixijs.download/release/pixi.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
